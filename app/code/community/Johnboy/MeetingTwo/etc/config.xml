@@ -34,5 +34,16 @@
                 </args>
             </customer>
         </routers>
+        <events>
+            <controller_action_predispatch_cms>
+                <observers>
+                    <homepage_redirect>
+                        <type>singleton</type>
+                        <class>Johnboy_MeetingTwo_Model_Observer</class>
+                        <method>checkHomeUrl</method>
+                    </homepage_redirect>
+                </observers>
+            </controller_action_predispatch_cms>
+        </events>
     </frontend>
 </config>
