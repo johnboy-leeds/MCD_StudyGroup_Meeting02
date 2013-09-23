@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Johnboy_MeetingTwo>
+            <version>1.0.0</version>
+        </Johnboy_MeetingTwo>
+    </modules>
+    <global>
+        <models>
+            <meetingtwo>
+                <class>Johnboy_MeetingTwo_Model</class>
+            </meetingtwo>
+            <sales>
+                <rewrite>
+                    <order>meetingtwo/sales_order</order>
+                </rewrite>
+            </sales>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <meetingtwo>
+                <use>standard</use>
+                <args>
+                    <module>Johnboy_MeetingTwo</module>
+                    <frontName>meetingtwo</frontName>
+                </args>
+            </meetingtwo>
+            <customer>
+                <args>
+                    <modules>
+                        <Johnboy_MeetingTwo before="Mage_Customer">Johnboy_MeetingTwo_Customer</Johnboy_MeetingTwo>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+    </frontend>
+</config>
