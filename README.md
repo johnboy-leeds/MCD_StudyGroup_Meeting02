@@ -5,9 +5,9 @@ Exercises from meeting two; Basics &amp; Request Flow.
 
 1. Rewrite sales/order model to add the customer group model as an email template variable in the *sendNewOrderEmail()* method, so the group code can be added to the email using *{{ var customer_group.getCode()}}*
 
-        Solution in 
-        [app/code/community/Johnboy/MeetingTwo/Model/Sales/Order.php][https://github.com/johnboy-leeds/MCD_StudyGroup_Meeting02/blob/master/app/code/community/Johnboy/MeetingTwo/Model/Sales/Order.php]
-        [app/code/community/Johnboy/MeetingTwo/etc/config.xml][https://github.com/johnboy-leeds/MCD_StudyGroup_Meeting02/blob/master/app/code/community/Johnboy/MeetingTwo/etc/config.xml]
+Solution in 
+[app/code/community/Johnboy/MeetingTwo/Model/Sales/Order.php][https://github.com/johnboy-leeds/MCD_StudyGroup_Meeting02/blob/master/app/code/community/Johnboy/MeetingTwo/Model/Sales/Order.php]
+[app/code/community/Johnboy/MeetingTwo/etc/config.xml][https://github.com/johnboy-leeds/MCD_StudyGroup_Meeting02/blob/master/app/code/community/Johnboy/MeetingTwo/etc/config.xml]
 
 2. Create an observer that redirects the visitor to the base URL if the CMS home page URL key is accessed directly (i.e. /home -> / )
 
